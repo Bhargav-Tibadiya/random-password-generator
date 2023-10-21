@@ -18,10 +18,52 @@
 
             <button>
                 <span data-copyMsg></span>
-                <img src="" alt="">
+                <img src="asset/copy.svg" alt="copy" width="24" height="24">
             </button>
             
         </div>
+
+        <div class="input-container">
+            <div class="length-container">
+                <p>Passworrd Length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            <div>
+                
+                <div>
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase"> Includes Uppercase Letters</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase"> Includes Lowercase Letters</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers"> Includes Numbers</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols"> Includes Symbols</label>
+                </div>
+
+                <div class="strength-container">
+                    <p>Strength</p>
+                    <div data-indicator></div>
+                </div>
+
+                <button class="generateButton">Generate Password</button>
+
+            </div>            
+
+        </div>
+
     </div>
 
 
