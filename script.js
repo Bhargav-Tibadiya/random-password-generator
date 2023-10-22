@@ -4,12 +4,12 @@ const passwordDisplay = document.querySelector("[data-passwordDisplay]");
 const copyBtn = document.querySelector("[data-copy]");
 const copyMsg = document.querySelector("[data-copyMsg]");
 const uppercaseCheck = document.querySelector("#uppercase");
-const ulowercaseCheck = document.querySelector("#lowercase");
+const lowercaseCheck = document.querySelector("#lowercase");
 const numberCheck = document.querySelector("#numbers");
 const symbolCheck = document.querySelector("#symbols");
 const indicator = document.querySelector("[data-indicator]");
 const generateBtn = document.querySelector(".generateBtn");
-const allChechBox = document.querySelector("input[type=checkbox]");
+const allCheckBox = document.querySelector("input[type=checkbox]");
 
 let passwword = "";
 let passwordLength = 10;
@@ -54,4 +54,28 @@ function generateSymbols(){
     const randomNumber = getRndInteger(0,symbols.length);
     return symbols.charAt[randomNumber];
 
+}
+
+function caculateStrength(){
+    let hasUpper = false;
+    let hasLower = false;
+    let hasNum = false;
+    let hasSym = false;
+
+    if(uppercaseCheck.checked) hasUpper = true;
+    if(lowercaseCheck.checked) hasLower = true;
+    if(numberCheck.checked) hasNum = true;
+    if(symbolCheck.checked) hasSym = true;
+
+    if(hasUpper && hasLower && (hasNum || hasSym) && passwordLength >=8){
+        setIndicator("#0f0");
+    } else if((hasLower || hasUpper) && (hasNum || hasSym) && passwordLength >=6){
+        setIndicator("#ff0");
+    } else {
+        setIndicator("#ff0");
+    }
+}
+
+async function copyContent(){
+    
 }
