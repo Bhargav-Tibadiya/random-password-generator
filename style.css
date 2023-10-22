@@ -1,5 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Spline+Sans:wght@300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+    --vb-yellow: hsl(52, 100%, 62%);  
+    --pl-white: hsl(0, 0%, 100%);  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}   
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(231deg, rgba(22,6,40,1) 0%,  rgba(52,28,79,1) 50%, rgba(88,7,125,1) 100% );
+}
+
+.container{
+    width: 90%;
+    max-width: 450px;
+}
+
+h1{
+    color: var(--pl-white);
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.display-container{
+    position: relative;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid var(--lt-violet2);
+    margin: 1rem 0;
+    padding-top: 0.35rem;
+}
+
+.display{
+    width:100%;
+    background-color: transparent;
+    padding: 1.25rem 1rem;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border: none;
+    outline: none;
+}
+
+.display::placeholder{
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: var(--vb-yellow);
+    transform: translateY(-50%);
+    opacity: 0.65;
+    text-transform: uppercase;
+}
+
+.display-container button{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+}
+
+
+.input-container{
+    width: 100%;
+    background-color: var(--dk-violet);
+    border-radius: 1rem;
+    padding: 2rem;
+    border-bottom: 0.35rem solid var(--lt-violet2);
+}
+
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.length-container p:nth-child(1){
+    color: var(--pl-white);
+    font-size: 1.5rem;
+}
+
+.length-container p:nth-child(2){
+    color: var(--vb-yellow);
+    font-size: 1.5rem;
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
