@@ -16,6 +16,7 @@ let password = "";
 let passwordLength = 10;
 let checkCount = 0;
 //  Set Color to grey
+setIndicator("#ccc");
 
 
 // FunctionCalls
@@ -36,7 +37,7 @@ inputSlider.addEventListener('input',(e)=>{
 
 function setIndicator(color){
     indicator.style.backgroundColor = color;
-    indicator.style.boxShadow = "5px 5px 5px 5px rgba(0,0,0,0.75)";
+    indicator.style.boxShadow = "0px 0px 5px 5px hsl(281, 89%, 26%)";
 }
 
 function getRndInteger(min,max){

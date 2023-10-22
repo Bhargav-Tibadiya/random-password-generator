@@ -17,9 +17,9 @@
             <!-- data-passwordDisplay is custom attru=ibut which can be selected via QuerySelector JS -->
             <input readonly class="display" placeholder="Password" data-passwordDisplay>
 
-            <button>
+            <button class="copyBtn" data-copy>
                 <span data-copyMsg></span>
-                <img src="asset/copy.svg" alt="copy" width="24" height="24" data-copy>
+                <img src="asset/copy.svg" alt="copy" width="24" height="24" >
             </button>
             
         </div>
@@ -34,29 +34,29 @@
 
             <div>
                 
-                <div>
+                <div class="check">
                     <input type="checkbox" id="uppercase">
                     <label for="uppercase"> Includes Uppercase Letters</label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" id="lowercase">
                     <label for="lowercase"> Includes Lowercase Letters</label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" id="numbers">
                     <label for="numbers"> Includes Numbers</label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" id="symbols">
                     <label for="symbols"> Includes Symbols</label>
                 </div>
 
                 <div class="strength-container">
                     <p>Strength</p>
-                    <div data-indicator></div>
+                    <div class="indicator" data-indicator></div>
                 </div>
 
                 <button class="generateBtn">Generate Password</button>
