@@ -1,3 +1,5 @@
+/*  Designed and Developer By Bhargav Tibadiya  */
+
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Spline+Sans:wght@300;400;500;600&display=swap');
 
 *{
@@ -39,6 +41,7 @@ body{
 h1{
     color: var(--pl-white);
     opacity: 0.75;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1.2;
@@ -223,6 +226,23 @@ h1{
     outline: none;
 }
 
-.copyBtn span{
-    
+.active0{
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    background: var(--vb-cyan);
+    color: var(--lt-violet);
+    font-size: 1.15rem;
+    font-weight: 600;
+    top: -50px;
+    left: -25px;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
